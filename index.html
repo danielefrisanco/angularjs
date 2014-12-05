@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<title>Prima pagina con AngularJS</title>
+</head>
+ 
+<body>
+<div ng-app="" ng-init="primo_addendo=1;secondo_addendo=5" >
+<p>
+  La somma di {{primo_addendo}} e {{secondo_addendo}} &egrave; uguale a {{primo_addendo+secondo_addendo}}
+  
+<p>Input something in the input box:</p>
+<p>Name: <input type="text" ng-model="name" value="John"></p>
+<p ng-bind="name"></p>
+
+</p>
+</div>
+</body>
+ 
+</html>
+ 
