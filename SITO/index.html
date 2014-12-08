@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sito" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniele Frisanco" />
+    <title>AngularJS responsive website</title>
+    <meta name="description" content="sito test daniele frisanco">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+ 
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+ 
+    <script src="http://code.jquery.com/jquery-latest.min.js"        type="text/javascript"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/sito.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="scatola">
+            <a href="#!"><img class="logo" src="img/logo.png" /></a>
+            <!--  menu -->
+            <nav>
+                <ul> 
+                    <li><a id="chi_button" href="#!/chi" ng-class="{activeSmall:part == 'chi'}" >Chi siamo</a></li>
+                    <li><a id="prodotti_button" href="#!/prodotti" ng-class="{activeSmall:part == 'prodotti'}">Prodotti</a></li>
+                    <li><a id="collaborazioni_button" href="#!/collaborazioni" ng-class="{activeSmall:part == 'collaborazioni'}">Collaborazioni</a></li>
+                    <li><a id="dove_button" href="#!/dove" ng-class="{activeSmall:part == 'dove'}">Dove siamo</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header> 
+ 
+    <div style="position:relative">
+        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+    </div>
+
+</body>
+</html>

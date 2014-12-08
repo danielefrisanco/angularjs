@@ -15,7 +15,10 @@
   
 <p>Input something in the input box:</p>
 <p>Name: <input type="text" ng-model="name" value="John"></p>
-<p ng-bind="name"></p>
+<p ng-bind="name|lowercase"></p>
+<p>Age: <input type="text" ng-model="Age" ></p>
+<div ng-show="Age">{{ Age | number:6 }} </div>
+
 
 </p>
 </div>
