@@ -9,11 +9,12 @@ var app = angular.module('sito', []).
 			 , activetab: 'home'
 			 , controller: Home_ctrl
 			 }).
+			 /* fare in modo che la home.html sia come vuota e sia fatta dalla prodotti.html+collaborazioni.html
 			  when('/home', {
 			 templateUrl: 'pages/prodotti.html'
 			 , activetab: 'home'
 			 , controller: Home_ctrl
-			 }).
+			 }).*/
          when('/home/:id_prodotto', {
           templateUrl: function (params) { return 'pages/' + params.id_prodotto + '.html'; },
          controller: Prodotto_ctrl,
