@@ -35,6 +35,17 @@ var app = angular.module('sito', []).
          controller: Dove_ctrl,
           activetab: 'dove'
         }).
+        when('/prodotti', {
+          templateUrl: function (params) { return 'pages/prodotti.html'; },
+         controller: Prodotti_ctrl,
+          activetab: 'prodotti'
+        }).
+        when('/collaborazioni', {
+          templateUrl: function (params) { return 'pages/collaborazioni.html'; },
+         controller: Collaborazioni_ctrl,
+          activetab: 'collaborazioni'
+        }).
+        
         
 	otherwise({ redirectTo: '/' });	
 		
@@ -43,7 +54,27 @@ var app = angular.module('sito', []).
         $scope.$on("$routeChangeSuccess", function (scope, next, current) {
           $scope.part = $route.current.activetab;
         });
-  }]);*/
+  }]);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  * 
+  * 
+ PROVARE il controller qui
+ .controller('Controller', ['$scope', function($scope) {
+  $scope.customer = {
+    name: 'Naomi',
+    address: '1600 Amphitheatre'
+  };
+}])
+ 
+ 
+    */
 	
 	
 	 
