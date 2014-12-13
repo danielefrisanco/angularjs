@@ -32,12 +32,7 @@
                  </ul>
             </nav>
         </div>
-    </header> 
- <div ng-app="sito" ng-controller="MapCtrl">
-    <div id="map"></div>
-    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-         <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
-    </div>
+    </header>  
 </div>
     <div style="position:relative">
         <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
