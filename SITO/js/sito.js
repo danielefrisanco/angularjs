@@ -54,7 +54,11 @@ var app = angular.module('sito', []).
          controller: Collaborazioni_ctrl,
           activetab: 'collaborazioni'
         }).
-        
+          when('/home', {
+          templateUrl: function (params) { return 'pages/home.html'; },
+         controller: CarouselDemoCtrl,
+          activetab: 'home'
+        }). 
         
 	otherwise({ redirectTo: '/' });	
 		
@@ -84,5 +88,3 @@ var app = angular.module('sito', []).
  
  
     */
-	  
-	 

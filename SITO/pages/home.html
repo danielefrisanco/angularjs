@@ -5,51 +5,28 @@
             <img class="img" src="img/maxifoto.png" />
         </div>
     </a>
-	
-	
- <!--  <a class="oggetto_home" href="#/chi" style="background-color:#0018FF">
-        <div class="scatola">
-            <div class="nome">Chi</div>
-            <img class="img" src="img/chi.png" />
+	<div ng-controller="CarouselDemoCtrl">
+  <div style="height: 305px">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{$index}}</h4>
+          <p>{{slide.text}}</p>
         </div>
-    </a>
-    <a class="oggetto_home" href="#/dove" style="background-color:#0018FF">
-        <div class="scatola">
-            <div class="nome">Dove</div>
-            <img class="img" src="img/dove.png" />
-        </div>
-    </a>
-  
-  
-    <a class="oggetto_home" href="#/home/prodotto1" style="background-color:#FF1500">
-        <div class="scatola">
-            <div class="nome">Primo Prodotto</div>
-            <img class="img" src="img/prodotto1.png" />
-        </div>
-    </a>
-    <a class="oggetto_home" href="#/home/prodotto2" style="background-color:#FFE800">
-        <div class="scatola">
-            <div class="nome">Secondo Prodotto</div>
-            <img class="img" src="img/prodotto2.png" />
-        </div>
-    </a>
-    <a class="oggetto_home" href="#/home/prodotto3" style="background-color:#11FF00">
-        <div class="scatola">
-            <div class="nome">Terzo Prodotto</div>
-            <img class="img" src="img/prodotto3.png" />
-        </div>
-    </a>
-    <a class="oggetto_home" href="#/home/collaborazione1" style="background-color:#00FFF5">
-        <div class="scatola">
-            <div class="nome">Prima Collaborazione</div>
-            <img class="img" src="img/collaborazione1.png" />
-        </div>
-    </a>
-    <a class="oggetto_home" href="#/home/collaborazione2" style="background-color:#0018FF">
-        <div class="scatola">
-            <div class="nome">Seconda Collaborazione</div>
-            <img class="img" src="img/collaborazione2.png" />
-        </div>
-    </a>-->
+      </slide>
+    </carousel>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+    </div>
+    <div class="col-md-6">
+      Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+      <br />Enter a negative number or 0 to stop the interval.
+    </div>
+  </div>
+</div>
+
     <ng-include src="'pages/footer.html'"></ng-include>
 </div>
