@@ -6,9 +6,8 @@
 
 
  
-
-
-
+ 
+// var app = angular.module('sito', ['ui.bootstrap']).
 var app = angular.module('sito', []).
     config(['$routeProvider', function ($routeProvider) {
 		
