@@ -55,7 +55,7 @@ var app = angular.module('sito', []).
         }).
           when('/home', {
           templateUrl: function (params) { return 'pages/home.html'; },
-         controller: CarouselDemoCtrl,
+       
           activetab: 'home'
         }). 
         

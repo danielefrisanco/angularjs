@@ -1,7 +1,9 @@
-(function($) {
+/*(function($) {
     $(function() {
-        $('.jcarousel').jcarousel();
-
+         
+$('.jcarousel').jcarousel({
+    wrap: 'circular'
+});
         $('.jcarousel-control-prev')
             .on('jcarouselcontrol:active', function() {
                 $(this).removeClass('inactive');
@@ -34,3 +36,4 @@
             .jcarouselPagination();
     });
 })(jQuery);
+*/

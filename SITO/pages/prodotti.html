@@ -1,21 +1,44 @@
 <div style="width:100%">
-    <a class="oggetto_home" href="#/home/prodotto1" style="background-color:#FF1500">
-        <div class="scatola">
-            <div class="nome">Primo Prodotto</div>
-            <img class="img" src="img/prodotto1.png" />
+  
+     <div class="wrapper">
+            <h1>I nostri prodotti</h1>
+
+           
+           
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+							<a class="oggetto_home" href="#/home/prodotto1"  >
+								<img src="img/prodotto1.png" width="600" height="400" alt="">
+							</a>
+						</li>
+						 <li>
+							<a class="oggetto_home" href="#/home/prodotto2"  >
+								<img src="img/prodotto2.png" width="600" height="400" alt="">
+							</a>
+						</li>
+						 <li>
+							<a class="oggetto_home" href="#/home/prodotto3"  >
+								<img src="img/prodotto3.png" width="600" height="400" alt="">
+							</a>
+						</li>
+                    </ul>
+                </div>
+
+                <p class="photo-credits">
+                    Photos by <a href="http://www.ottoct.netsons.org">Daniele Frisanco</a>
+                </p>
+
+                <a href="#/prodotti" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#/prodotti" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
         </div>
-    </a>
-    <a class="oggetto_home" href="#/home/prodotto2" style="background-color:#FFE800">
-        <div class="scatola">
-            <div class="nome">Secondo Prodotto</div>
-            <img class="img" src="img/prodotto2.png" />
-        </div>
-    </a>
-    <a class="oggetto_home" href="#/home/prodotto3" style="background-color:#11FF00">
-        <div class="scatola">
-            <div class="nome">Terzo Prodotto</div>
-            <img class="img" src="img/prodotto3.png" />
-        </div>
-    </a> 
+ 
+    
     <ng-include src="'pages/footer.html'"></ng-include>
 </div>
