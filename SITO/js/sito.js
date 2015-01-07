@@ -27,12 +27,12 @@ var app = angular.module('sito', []).
           templateUrl: function (params) { return 'pages/' + params.id_prodotto + '.html'; },
          controller: Prodotto_ctrl,
           activetab: 'home'
-        }). 
+        })/*. 
           when('/home/:id_collaborazione', {
           templateUrl: function (params) {  return 'pages/' + params.id_collaborazione + '.html'; },
            controller: Collaborazioni_ctrl,
           activetab: 'collaborazioni'
-        }).
+        })*/.
         when('/chi', {
           templateUrl: function (params) { return 'pages/chi.html'; },
           controller: Chi_ctrl,
