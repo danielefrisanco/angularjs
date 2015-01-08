@@ -1,18 +1,7 @@
 
 
 'use strict';
-$(function() {
-    $('.jcarousel')
-        .jcarousel({
-            // Core configuration goes here
-        })
-        .jcarouselAutoscroll({
-            interval: 3000,
-            target: '+=1',
-            autostart: true
-        })
-    ;
-});
+ 
 function Home_ctrl($scope, $http) { }
 function Prodotti_ctrl($scope, $http) {(function($) {
     $(function() {
@@ -28,9 +17,9 @@ function Prodotti_ctrl($scope, $http) {(function($) {
                 } else if (width >= 350) {
                     width = width / 2;
                 }*/
-                  width = width / 2;//due elementi alla volta
+                 /* width = width / 2;//due elementi alla volta
 
-                jcarousel.jcarousel('items').css('width', width + 'px');
+                jcarousel.jcarousel('items').css('width', width + 'px');*/
             })
             
             .jcarousel({
@@ -89,12 +78,10 @@ function Collaborazioni_ctrl($scope, $http, $timeout) {(function($) {
                 } else if (width >= 350) {
                     width = width / 2;
                 }
-                */ 
-			var element = $(this),
-            width =  element.innerWidth();/*un item alla volta*/
+                */  
+       /*     width =  jcarousel.innerWidth()/2;//un item alla volta
 
-                jcarousel.jcarousel('items').css('width', width + 'px');
-                jcarousel.jcarousel('items').css('float',  'right');
+                jcarousel.jcarousel('items').css('width', width + 'px'); */
             })  
           
             .jcarousel({
