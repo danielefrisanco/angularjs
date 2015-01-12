@@ -46,5 +46,19 @@ pre {
     max-width: 620px;
     padding: 0 20px 40px 20px;
     margin: auto;
+} 
+.gototop {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+   
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
 }
 
+.gototop:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}

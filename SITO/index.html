@@ -23,7 +23,23 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
  
- 
+ <script>
+  $(document).ready(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('.gototop').fadeIn();
+          } else {
+              $('.gototop').fadeOut();
+          }
+      });
+      $('.gototop').click(function () {
+          $("html, body").animate({
+              scrollTop: 0
+          }, 600);
+          return false;
+      });
+  });
+</script>
  
 </head>
 <body>
@@ -47,5 +63,6 @@
         <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
     </div>
    
+ <a href="#" class="gototop">Top</a>
 </body>
 </html>
