@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Daniele Frisanco" />
-    <title>AngularJS responsive website</title>
+    <title>Daniele Frisanco</title>
     <meta name="description" content="sito test daniele frisanco">
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -23,22 +23,8 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
  
- <script>
-  $(document).ready(function () {
-      $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-              $('.gototop').fadeIn();
-          } else {
-              $('.gototop').fadeOut();
-          }
-      });
-      $('.gototop').click(function () {
-          $("html, body").animate({
-              scrollTop: 0
-          }, 600);
-          return false;
-      });
-  });
+		<script type="text/javascript" src="js/gototop.js"></script>
+   
 </script>
  
 </head>
